@@ -80,6 +80,7 @@ def test_request_translate(app_test: FlaskClient):
 
 
 def test_post_translate(app_test: FlaskClient):
+    app_test.testing = True
     response = app_test.post(
         "/",
         data={
