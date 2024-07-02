@@ -2,7 +2,6 @@ import json
 from src.models.history_model import HistoryModel
 
 
-# Req. 7
 def test_request_history():
     response = HistoryModel.list_as_json()
     data = json.loads(response)
